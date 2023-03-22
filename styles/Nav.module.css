@@ -1,0 +1,11 @@
+.nav {
+  padding: 30px;
+  background: hotpink;
+}
+.nav ul {
+  display: flex;
+  gap: 0 10px;
+}
+.nav ul li {
+  color: #fff;
+}
