@@ -1,25 +1,31 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import HeaderInfo from "../../components/HeaderInfo";
 import photosStyle from "../../styles/Photos.module.css";
 const Photos = ({ cats }) => {
   return (
-    <>
+    <div className={photosStyle.photosWrap}>
       <HeaderInfo title="Cats World - photo" />
+      <h1>Cats World</h1>
       <ul className={photosStyle.photos}>
         {cats.map((cat) => (
           <li key={cat.name}>
-            <Image
-              src={cat.image.url}
-              width={100}
-              height={100}
-              alt={cat.name}
-            />
-            <span>{cat.name}</span>
+            <Link href={`photos/${cat.id}`}>
+              <a>
+                <Image
+                  src={cat.image.url}
+                  width={100}
+                  height={100}
+                  alt={cat.name}
+                />
+                <span>{cat.name}</span>
+              </a>
+            </Link>
           </li>
         ))}
       </ul>
-    </>
+    </div>
   );
 };
 

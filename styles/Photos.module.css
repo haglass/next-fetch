@@ -1,3 +1,8 @@
+.photosWrap {
+  display: block;
+  width: 95%;
+  margin: 0 auto;
+}
 .photos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -8,6 +13,12 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+.photos li a {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .photos li span {
   width: 100%;
   text-align: center;

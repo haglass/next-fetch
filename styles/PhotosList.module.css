@@ -1,0 +1,31 @@
+.photos {
+  display: block;
+  width: 95%;
+  margin: 0 auto;
+}
+.photos h1 {
+  display: flex;
+  justify-content: space-between;
+}
+.photos ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.photos li {
+  text-align: center;
+}
+.info {
+  margin-top: 20px;
+}
+.info a {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 5px;
+}
+.info p {
+  text-align: justify;
+  width: 70%;
+  margin: 0 auto;
+}
